@@ -7,7 +7,7 @@ Note that having a Tumblr account is essential to be able to run the code as it 
 sunflower 🌻
 ===================
 
-Live preview is available here: 
+Live preview is available here: https://sxnfflower.tumblr.com/
 
 <ul>
 <li>responsive</li>
