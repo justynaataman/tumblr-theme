@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+ 
+<html>
+<head>
+
+
+ 
+<link rel="shortcut icon" href="{Favicon}" />
+<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+<title>{Title}</title>
+
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+ 
+
+    <meta name="color:background" content="#ffffff"/>
+    <meta name="color:postbackground" content="#FFFF9F">
+    <meta name="color:title" content="#FFFF9F"/>
+
+    <meta name="color:Bold" content="#777777" />
+    <meta name="color:Italic" content="#bbbbbb"/>
+   
+    <meta name="color:text" content="#c0bdb8" />
+    <meta name="color:link hover" content="#fdfdfd" />
+    <meta name="color:link" content="#c0bdb8" />
+    
+    <meta name="text:link1" content="url" />
+    <meta name="text:name1" content="link" />
+    <meta name="text:link2" content="url" />
+    <meta name="text:name2" content="link" />
+    <meta name="text:link3" content="url" />
+    <meta name="text:name3" content="link" />
+
+
+   
+ </head>
+       
+
+<style type="text/css">
+    
+::-webkit-scrollbar {
+    width: 5px;
+    }
+
+::-webkit-scrollbar-thumb {
+    background: black;
+
+    }
+    
+
+    
+body {
+    color:{color:text}; 
+    background-color:#fef4ff;  
+    font-family:verdana; 
+    font-size:12px; 
+    line-height:19px; 
+    text-align:justify;
+ 
+
+
+    
+}
+ 
+a:link, a:active, a:visited{
+    color: {color:link}; 
+    text-decoration:none;
+    
+}
+ 
+a:hover {
+    color:{color:link hover};
+    -webkit-transition: all 0.2s linear; 
+    -moz-transition: all 0.2s linear; 
+    transition: all 0.2s linear;
+    
+}
+ 
+small{
+    font-size:auto;
+    
+}
+
+big{
+    font-size:auto;
+    
+}
+
+b, strong{
+    color:{color:bold};
+    
+}
+
+h1 {
+    font-size:15px;}
+
+i, em {
+    color:{color:italic}}
+
+p{
+    margin-top:6px; 
+    margin-bottom:6px}
+
+blockquote {
+    padding:0px; 
+    padding-left:10px; 
+    margin:8px; 
+    border-left:2px solid {color:text}}
+ 
+img a{
+
+    width:100%;
+    
+}
+ 
+
+
+.entries {
+    
+
+width: 560px;
+      background-color: #fef4ff;
+      margin: 60px 0 60px 460px;
+      padding: 20px 0;
+      color: black;
+      margin-left:10%;
+      float:left;
+    
+
+    
+    
+}
+
+
+.posts {
+    /* top right bottom left*/
+  background: {color:post bg};
+    margin: 5px 0px 40px 0px;
+    padding: 8px;
+    border: 2px solid {color:border};
+    width: 200px!important;
+    overflow:auto;
+    z-index:1;
+
+
+    
+}
+
+
+.posts img {
+    max-width:100%;
+    
+    
+}
+.posts:hover{
+    opacity:1;
+     -webkit-transition: all 0.3s linear; 
+    -moz-transition: all 0.3s linear; 
+    transition: all 0.3s linear;
+}
+
+
+
+.sidebar{ 
+     display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-left:30%;
+    margin-top:10%;
+    float:left;
+    width:200px; 
+    height:200px;
+    background-color:white;
+    border: 2px solid pink;
+    
+}
+.kwadrat{
+    
+ 
+    height:200px;
+    width:200px;
+    border: solid 5px black;
+
+       margin-left:10%;
+    margin-top:10%;
+    float:left;
+    
+}
+
+.kwadratposty{
+    
+        height:100px;
+    width:100px;
+    border: solid 5px black;
+    z-index:-999999;
+
+   
+    
+}
+.cent{
+    text-align: center;
+}
+.title{
+    font-size: 20px;
+    color: {color:title};
+    
+    
+}
+
+
+hr {
+  border-top: 1px solid ;
+}
+
+
+.top, .bottom, .left, .right {
+    /*#FAFFA8*/
+	background: pink;
+	position: fixed;
+	}
+.left, .right {
+	top: 0; bottom: 0;
+	width: 12px;
+}
+.left { 
+    left: 0; 
+    
+}
+.right { 
+    right: 0; 
+    
+}
+		
+.top, .bottom {
+	left: 0; right: 0;
+	height: 8px;
+}
+.top { 
+    top: 0; 
+    
+}
+.bottom { 
+    bottom: 0; 
+    
+}
+
+
+h2 {
+    font-family:helvetica; 
+    font-weight:100; 
+    line-height:17px;
+}
+
+.pagination {
+    font-family:calibri; 
+    text-align:center; 
+    font-size:24px; 
+    margin-bottom:2px;
+    
+}
+ 
+
+ 
+.info{
+    padding-top:5px; 
+    display:block; 
+    padding-bottom:2px; 
+    width:auto; 
+    font-size:12px; 
+    font-family:verdana; 
+
+    
+}
+ 
+.audio{
+    background-color:white; 
+    display:block;
+    
+}
+
+
+ 
+
+
+ul.chat, .chat ol, .chat li {
+    list-style:none; 
+    margin:0px; 
+    padding:0px;
+    
+}
+
+
+ 
+.notes img{
+    width:0px; 
+    position:relative; 
+    top:1px;
+    
+}
+
+ol.notes, .notes li{
+    width:100px; 
+    list-style:none; 
+    margin:0px 0 -1px 5px; 
+    padding:0px;
+       margin-left:10%;
+      float:left;
+    
+}
+
+ 
+</style>
+      
+
+<div class="left"></div>
+<body>
+
+<div class="kwadrat">
+<div class="sidebar">
+
+<div class = "cent">
+<div class="title"><a href="/">{Title}</a></div>
+
+{description}
+<p>
+<a href="/">home</a> /
+
+<a href="/ask">ask</a> /
+<a href="{text:link1}">{text:name1}</a> /
+<a href="{text:link2}">{text:name2}</a> /
+<a href="{text:link3}">{text:name3}</a> 
+
+<div class="pagination">{block:Pagination}{block:PreviousPage}
+<a href="{PreviousPage}">«</a>
+{/block:PreviousPage} {block:NextPage}
+<a href="{NextPage}">»</a>
+<br />{/block:NextPage}{/block:Pagination}
+    
+</div>
+</div>
+
+</div>
+
+ </div>
+ 
+<div class="entries">
+{block:posts}
+ 
+<div class="posts">
+ 
+<div class = "cent"><a href="{Permalink}">{12Hour} {CapitalAmPm}</a></div>
+{block:Text}{block:Title}<h1>{Title}</h1>{/block:Title}{Body}{/block:Text}
+ 
+ 
+{block:Quote}<h2>“{Quote}” — {Source}</h2><br>{/block:Quote}
+ 
+{block:Link}<a href="{URL}"><h1>{Name}</h1></a>
+{block:Description}<p>{Description}</p>
+{/block:Description}{/block:Link}
+ 
+{block:Photo}<center><img src="{PhotoURL-400}"/></center>
+{/block:Photo}
+ 
+{block:Photoset}<center>{Photoset-400}</center>
+{/block:Photoset}
+ 
+ 
+{block:Video}{Video-400}{/block:Video}
+
+{block:Answer}{Asker} wants to know: {Question}<br>{Answer}{/block:Answer}
+ 
+ 
+{block:Audio}{AudioPlayerWhite}<br>
+{/block:Audio}
+ 
+
+ 
+<center>
+{block:HasTags}<u>filed under:</u>{block:Tags} # <a href="{TagURL}">{Tag} </a> {/block:Tags}{/block:HasTags}
+</div>
+ 
+{/block:Posts}
+<center>
+ 
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+</center>
+    
+</div>
+</div>
+
+</body>
+</html>
