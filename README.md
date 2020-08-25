@@ -18,6 +18,7 @@ dionysus
 ===================
 
 Live preview is available here: https://dixnnisis.tumblr.com/
+<div style="text-align:center"><img src="docs/dn.gif" /></div>
 <ul>
 <li>one column</li>
 <li>responsive with left-oriented content</li>
