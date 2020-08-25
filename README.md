@@ -2,13 +2,12 @@
 
 
 Note that having a Tumblr account is essential to be able to run the code as it is using Tumblr's special operators
-
-
+     
 sunflower 🌻
 ===================
 
 Live preview is available here: https://sxnfflower.tumblr.com/
-
+<div style="text-align:center"><img src="docs/sf.gif" /></div>
 <ul>
 <li>responsive</li>
 <li>custom colors of: background, posts' background, title, text, links, bolded text etc. </li>
@@ -18,4 +17,10 @@ Live preview is available here: https://sxnfflower.tumblr.com/
 dionysus
 ===================
 
-Live preview is available here:
+Live preview is available here: https://dixnnisis.tumblr.com/
+<ul>
+<li>one column</li>
+<li>responsive with left-oriented content</li>
+
+
+</ul>
